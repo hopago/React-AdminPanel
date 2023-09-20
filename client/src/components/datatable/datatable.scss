@@ -1,6 +1,27 @@
 .datatable {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 140px);
     padding: 20px;
+
+    .datatableTitle {
+        width: 100%;
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link {
+            text-decoration: none;
+            color: green;
+            font-weight: 300;
+            font-size: 16px;
+            border: 1px solid green;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
 
     .cellWithImg {
         display: flex;
@@ -38,14 +59,23 @@
         align-items: center;
         gap: 15px;
 
-        .viewButton {
-            padding: 3px 5px;
-            border-radius: 5px;
-            color: aquamarine;
-            border: 1px solid aqua;
-            cursor: pointer;
-        }
+        .link {
 
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            color: inherit;
+
+            .viewButton {
+                padding: 3px 5px;
+                border-radius: 5px;
+                color: aquamarine;
+                border: 1px solid aqua;
+                cursor: pointer;
+            }
+        }
+        
         .deleteButton {
             padding: 3px 5px;
             border-radius: 5px;
@@ -54,5 +84,10 @@
             border: 1px solid red;
             cursor: pointer;
         }
+    }
+
+    .MuiDataGrid-footerContainer {
+        color: gray !important;
+        
     }
 }
